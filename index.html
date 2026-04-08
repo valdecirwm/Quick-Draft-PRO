@@ -1,1 +1,343 @@
 
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Draft PRO | O Melhor Widget de Rascunhos para WordPress</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Inter', 'sans-serif'] },
+                    colors: { primary: { 50: '#eff6ff', 100: '#dbeafe', 500: '#3b82f6', 600: '#2563eb', 700: '#1d4ed8', 900: '#1e3a8a' } }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gradient-text {
+            background: linear-gradient(135deg, #2563eb, #14b8a6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hero-pattern {
+            background-color: #f8fafc;
+            background-image: radial-gradient(#e2e8f0 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+    </style>
+</head>
+<body class="font-sans text-slate-800 antialiased bg-slate-50">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center gap-2">
+                    <i data-lucide="pen-tool" class="text-primary-600 w-6 h-6"></i>
+                    <span class="font-bold text-xl tracking-tight">Quick Draft <span class="text-primary-600">PRO</span></span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#recursos" class="text-slate-600 hover:text-primary-600 font-medium transition">Recursos</a>
+                    <a href="#comparativo" class="text-slate-600 hover:text-primary-600 font-medium transition">Free vs PRO</a>
+                    <a href="#faq" class="text-slate-600 hover:text-primary-600 font-medium transition">FAQ</a>
+                </div>
+                <div class="flex items-center gap-4">
+                    <a href="#planos" class="bg-primary-600 hover:bg-primary-700 text-white px-5 py-2 rounded-full font-semibold transition shadow-md shadow-primary-500/30">
+                        Comprar Agora
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-pattern pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary-50 border border-primary-100 text-primary-700 text-sm font-semibold mb-6">
+                <span class="flex h-2 w-2 rounded-full bg-primary-600"></span>
+                Versão 1.0 lançada!
+            </div>
+            <h1 class="text-5xl md:text-6xl font-extrabold tracking-tight text-slate-900 mb-6 max-w-4xl mx-auto leading-tight">
+                Transforme seu painel do WordPress no seu <span class="gradient-text">segundo cérebro</span>.
+            </h1>
+            <p class="text-lg md:text-xl text-slate-600 mb-10 max-w-2xl mx-auto leading-relaxed">
+                Substitua o rascunho nativo e limitado do WordPress por um painel profissional. Salve ideias, textos e snippets de código com syntax highlighting sem sair do Dashboard.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#planos" class="bg-slate-900 hover:bg-slate-800 text-white px-8 py-3.5 rounded-full font-semibold text-lg transition shadow-xl">
+                    Ver Planos PRO
+                </a>
+                <a href="https://wordpress.org/plugins" target="_blank" class="bg-white hover:bg-slate-50 border border-slate-200 text-slate-700 px-8 py-3.5 rounded-full font-semibold text-lg transition shadow-sm flex items-center justify-center gap-2">
+                    <i data-lucide="download" class="w-5 h-5"></i> Baixar versão Free
+                </a>
+            </div>
+
+            <!-- Dashboard Mockup Image -->
+            <div class="mt-16 relative max-w-5xl mx-auto">
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-50 to-transparent z-10 bottom-0 h-32"></div>
+                <img src="https://images.unsplash.com/photo-1618477247222-ac60ceb0a416?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Painel do Quick Draft PRO" class="rounded-xl shadow-2xl border border-slate-200 object-cover h-[400px] w-full object-top opacity-90">
+                <div class="absolute inset-0 flex items-center justify-center z-20">
+                    <div class="bg-white/90 backdrop-blur p-6 rounded-2xl shadow-xl border border-slate-200 text-left max-w-sm transform -rotate-2 hover:rotate-0 transition duration-300">
+                        <div class="flex items-center gap-2 mb-3">
+                            <span class="text-2xl">💻</span>
+                            <h3 class="font-bold text-slate-800">Snippet: Custom Query</h3>
+                        </div>
+                        <div class="bg-slate-900 text-green-400 p-3 rounded-lg font-mono text-xs">
+                            $args = ['post_type' => 'pro'];<br>
+                            $query = new WP_Query($args);
+                        </div>
+                        <div class="mt-3 flex gap-2">
+                            <span class="bg-blue-100 text-blue-700 px-2 py-1 rounded text-xs font-semibold">Código</span>
+                            <span class="bg-slate-100 text-slate-600 px-2 py-1 rounded text-xs font-semibold">PHP</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section id="recursos" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-slate-900 mb-4">Anotações pensadas para Profissionais</h2>
+                <p class="text-lg text-slate-600 max-w-2xl mx-auto">Tudo que você precisa para organizar seu fluxo de trabalho de conteúdo e desenvolvimento direto no painel.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 hover:shadow-lg transition">
+                    <div class="w-12 h-12 bg-primary-100 text-primary-600 rounded-xl flex items-center justify-center mb-6">
+                        <i data-lucide="code-2" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Editor de Código</h3>
+                    <p class="text-slate-600 leading-relaxed">Syntax highlighting integrado para PHP, JS, CSS, Python e SQL. Diga adeus aos snippets perdidos em arquivos de texto.</p>
+                </div>
+                <!-- Feature 2 -->
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 hover:shadow-lg transition">
+                    <div class="w-12 h-12 bg-emerald-100 text-emerald-600 rounded-xl flex items-center justify-center mb-6">
+                        <i data-lucide="send" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Converta em Posts</h3>
+                    <p class="text-slate-600 leading-relaxed">Uma ideia genial surgiu? Com 1 clique, converta seu rascunho em um Post, Página ou Custom Post Type (CPT).</p>
+                </div>
+                <!-- Feature 3 -->
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 hover:shadow-lg transition">
+                    <div class="w-12 h-12 bg-purple-100 text-purple-600 rounded-xl flex items-center justify-center mb-6">
+                        <i data-lucide="users" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Colaboração (Equipe)</h3>
+                    <p class="text-slate-600 leading-relaxed">Marque um rascunho como compartilhado e toda a sua equipe de editores e administradores poderá vê-lo no painel.</p>
+                </div>
+                <!-- Feature 4 -->
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 hover:shadow-lg transition">
+                    <div class="w-12 h-12 bg-rose-100 text-rose-600 rounded-xl flex items-center justify-center mb-6">
+                        <i data-lucide="file-down" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Exportação Avançada</h3>
+                    <p class="text-slate-600 leading-relaxed">Baixe todos os seus rascunhos em um arquivo JSON, formato Markdown (.md) ou gere um PDF lindamente formatado.</p>
+                </div>
+                <!-- Feature 5 -->
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 hover:shadow-lg transition">
+                    <div class="w-12 h-12 bg-amber-100 text-amber-600 rounded-xl flex items-center justify-center mb-6">
+                        <i data-lucide="palette" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Organização Visual</h3>
+                    <p class="text-slate-600 leading-relaxed">Classifique por Categorias e pinte seus cards com uma paleta de 8 cores premium. Busque em tempo real sem recarregar.</p>
+                </div>
+                <!-- Feature 6 -->
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 hover:shadow-lg transition">
+                    <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center mb-6">
+                        <i data-lucide="infinity" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Rascunhos Ilimitados</h3>
+                    <p class="text-slate-600 leading-relaxed">Esqueça o limite de 10 cards da versão gratuita. Crie e fixe no topo quantos rascunhos seu projeto precisar.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Compare Section -->
+    <section id="comparativo" class="py-24 bg-slate-900 text-white">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">Por que fazer o Upgrade?</h2>
+                <p class="text-slate-400">A versão grátis é ótima para testes, mas o PRO é para quem leva o trabalho a sério.</p>
+            </div>
+
+            <div class="overflow-x-auto">
+                <table class="w-full text-left border-collapse">
+                    <thead>
+                        <tr class="border-b border-slate-700">
+                            <th class="py-4 px-6 font-semibold text-slate-300 w-1/2">Funcionalidade</th>
+                            <th class="py-4 px-6 font-semibold text-center text-slate-400">FREE</th>
+                            <th class="py-4 px-6 font-semibold text-center text-primary-400">PRO ✨</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-800">
+                        <tr>
+                            <td class="py-4 px-6">Quantidade de rascunhos</td>
+                            <td class="py-4 px-6 text-center text-slate-400">Máximo 10</td>
+                            <td class="py-4 px-6 text-center font-bold text-white">Ilimitado</td>
+                        </tr>
+                        <tr>
+                            <td class="py-4 px-6">Rascunhos fixados no topo (Pin)</td>
+                            <td class="py-4 px-6 text-center text-slate-400">Apenas 1</td>
+                            <td class="py-4 px-6 text-center font-bold text-white">Ilimitado</td>
+                        </tr>
+                        <tr>
+                            <td class="py-4 px-6">Tipos de Rascunho</td>
+                            <td class="py-4 px-6 text-center text-slate-400">Texto, Ideia</td>
+                            <td class="py-4 px-6 text-center font-bold text-white">Texto, Ideia, <span class="text-primary-400">Código</span></td>
+                        </tr>
+                        <tr>
+                            <td class="py-4 px-6">Syntax Highlighting para Código</td>
+                            <td class="py-4 px-6 text-center text-slate-500"><i data-lucide="x" class="w-5 h-5 mx-auto"></i></td>
+                            <td class="py-4 px-6 text-center text-emerald-400"><i data-lucide="check" class="w-5 h-5 mx-auto"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="py-4 px-6">Conversão em 1 clique</td>
+                            <td class="py-4 px-6 text-center text-slate-500"><i data-lucide="x" class="w-5 h-5 mx-auto"></i></td>
+                            <td class="py-4 px-6 text-center text-emerald-400">Posts, Páginas, CPTs</td>
+                        </tr>
+                        <tr>
+                            <td class="py-4 px-6">Formatos de Exportação</td>
+                            <td class="py-4 px-6 text-center text-slate-400">JSON</td>
+                            <td class="py-4 px-6 text-center font-bold text-white">JSON, Markdown, PDF</td>
+                        </tr>
+                        <tr>
+                            <td class="py-4 px-6">Rascunhos Compartilhados (Equipe)</td>
+                            <td class="py-4 px-6 text-center text-slate-500"><i data-lucide="x" class="w-5 h-5 mx-auto"></i></td>
+                            <td class="py-4 px-6 text-center text-emerald-400"><i data-lucide="check" class="w-5 h-5 mx-auto"></i></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="planos" class="py-24 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-slate-900 mb-4">Escolha a licença ideal para você</h2>
+                <p class="text-lg text-slate-600">Pagamento seguro. Receba sua licença e o arquivo PRO na hora.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto items-center">
+                <!-- Single Site -->
+                <div class="bg-white rounded-3xl p-8 border border-slate-200 shadow-sm">
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Single</h3>
+                    <p class="text-slate-500 text-sm mb-6">Perfeito para o seu site pessoal ou blog.</p>
+                    <div class="mb-6">
+                        <span class="text-4xl font-extrabold text-slate-900">R$ 97</span><span class="text-slate-500">/ano</span>
+                    </div>
+                    <ul class="space-y-4 mb-8 text-sm text-slate-600">
+                        <li class="flex items-center gap-3"><i data-lucide="check" class="text-emerald-500 w-4 h-4"></i> Licença para <strong>1 site</strong></li>
+                        <li class="flex items-center gap-3"><i data-lucide="check" class="text-emerald-500 w-4 h-4"></i> Todos os recursos PRO</li>
+                        <li class="flex items-center gap-3"><i data-lucide="check" class="text-emerald-500 w-4 h-4"></i> Atualizações por 1 ano</li>
+                        <li class="flex items-center gap-3"><i data-lucide="check" class="text-emerald-500 w-4 h-4"></i> Suporte por e-mail</li>
+                    </ul>
+                    <a href="#" class="block w-full text-center bg-slate-100 hover:bg-slate-200 text-slate-900 font-semibold py-3 rounded-xl transition">Comprar Single</a>
+                </div>
+
+                <!-- Freelancer (Destaque) -->
+                <div class="bg-slate-900 rounded-3xl p-8 border border-slate-800 shadow-2xl relative transform md:-translate-y-4">
+                    <div class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gradient-to-r from-primary-500 to-teal-400 text-white px-4 py-1 rounded-full text-xs font-bold uppercase tracking-wide">
+                        Mais Popular
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Freelancer</h3>
+                    <p class="text-slate-400 text-sm mb-6">Para desenvolvedores com alguns clientes.</p>
+                    <div class="mb-6">
+                        <span class="text-4xl font-extrabold text-white">R$ 197</span><span class="text-slate-400">/ano</span>
+                    </div>
+                    <ul class="space-y-4 mb-8 text-sm text-slate-300">
+                        <li class="flex items-center gap-3"><i data-lucide="check" class="text-primary-400 w-4 h-4"></i> Licença para <strong>até 5 sites</strong></li>
+                        <li class="flex items-center gap-3"><i data-lucide="check" class="text-primary-400 w-4 h-4"></i> Todos os recursos PRO</li>
+                        <li class="flex items-center gap-3"><i data-lucide="check" class="text-primary-400 w-4 h-4"></i> Atualizações por 1 ano</li>
+                        <li class="flex items-center gap-3"><i data-lucide="check" class="text-primary-400 w-4 h-4"></i> Suporte Prioritário</li>
+                    </ul>
+                    <a href="#" class="block w-full text-center bg-primary-600 hover:bg-primary-500 text-white font-semibold py-3 rounded-xl transition shadow-lg shadow-primary-600/30">Comprar Freelancer</a>
+                </div>
+
+                <!-- Agency -->
+                <div class="bg-white rounded-3xl p-8 border border-slate-200 shadow-sm">
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Agency</h3>
+                    <p class="text-slate-500 text-sm mb-6">Instale em todos os sites da sua agência.</p>
+                    <div class="mb-6">
+                        <span class="text-4xl font-extrabold text-slate-900">R$ 397</span><span class="text-slate-500">/ano</span>
+                    </div>
+                    <ul class="space-y-4 mb-8 text-sm text-slate-600">
+                        <li class="flex items-center gap-3"><i data-lucide="check" class="text-emerald-500 w-4 h-4"></i> Sites <strong>Ilimitados</strong></li>
+                        <li class="flex items-center gap-3"><i data-lucide="check" class="text-emerald-500 w-4 h-4"></i> Todos os recursos PRO</li>
+                        <li class="flex items-center gap-3"><i data-lucide="check" class="text-emerald-500 w-4 h-4"></i> Atualizações por 1 ano</li>
+                        <li class="flex items-center gap-3"><i data-lucide="check" class="text-emerald-500 w-4 h-4"></i> Suporte VIP</li>
+                    </ul>
+                    <a href="#" class="block w-full text-center bg-slate-100 hover:bg-slate-200 text-slate-900 font-semibold py-3 rounded-xl transition">Comprar Agency</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="py-24 bg-white">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-slate-900">Dúvidas Frequentes</h2>
+            </div>
+            
+            <div class="space-y-4">
+                <!-- FAQ Item -->
+                <div class="border border-slate-200 rounded-xl p-6">
+                    <h4 class="font-bold text-slate-900 mb-2">Como recebo o plugin após a compra?</h4>
+                    <p class="text-slate-600 text-sm leading-relaxed">Assim que o pagamento for aprovado, você receberá automaticamente um e-mail contendo o arquivo ZIP do plugin PRO e a sua Chave de Licença exclusiva para ativação no painel.</p>
+                </div>
+                <!-- FAQ Item -->
+                <div class="border border-slate-200 rounded-xl p-6">
+                    <h4 class="font-bold text-slate-900 mb-2">Ele substitui o rascunho padrão do WordPress?</h4>
+                    <p class="text-slate-600 text-sm leading-relaxed">Ele não deleta a função nativa, mas atua como um widget independente e infinitamente mais poderoso. Recomendamos ocultar o widget antigo nas "Opções de Tela" para manter seu painel limpo.</p>
+                </div>
+                <!-- FAQ Item -->
+                <div class="border border-slate-200 rounded-xl p-6">
+                    <h4 class="font-bold text-slate-900 mb-2">E se eu não renovar a assinatura anual?</h4>
+                    <p class="text-slate-600 text-sm leading-relaxed">Os seus rascunhos criados estão seguros e salvos no banco de dados. Porém, ao expirar a licença, os recursos exclusivos (como criação ilimitada, editor de código e exportação avançada) serão desabilitados até a renovação.</p>
+                </div>
+                <!-- FAQ Item -->
+                <div class="border border-slate-200 rounded-xl p-6">
+                    <h4 class="font-bold text-slate-900 mb-2">Posso usar o plano Single em um ambiente de homologação (localhost)?</h4>
+                    <p class="text-slate-600 text-sm leading-relaxed">Sim! Nossa verificação de licença permite ativar e desativar a chave quando você migrar do localhost para o domínio oficial em produção.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 py-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="flex items-center gap-2 text-white">
+                <i data-lucide="pen-tool" class="w-5 h-5"></i>
+                <span class="font-bold text-lg">Quick Draft PRO</span>
+            </div>
+            <div class="text-slate-400 text-sm text-center md:text-left">
+                &copy; 2024 VWM Tecnologias. Todos os direitos reservados.<br>
+                Este plugin não é afiliado à Automattic ou ao projeto WordPress.
+            </div>
+            <div class="flex gap-4">
+                <a href="#" class="text-slate-400 hover:text-white transition">Termos</a>
+                <a href="#" class="text-slate-400 hover:text-white transition">Privacidade</a>
+                <a href="#" class="text-slate-400 hover:text-white transition">Contato</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Inicializa os ícones do Lucide
+        lucide.createIcons();
+    </script>
+</body>
+</html>
