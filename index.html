@@ -37,18 +37,20 @@
 <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-slate-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between items-center h-16">
+            <a href="#hero">
             <div class="flex items-center gap-2">
                 <i data-lucide="pen-tool" class="text-primary-600 w-6 h-6"></i>
                 <span class="font-bold text-xl tracking-tight">Quick Draft <span class="text-primary-600">PRO</span></span>
             </div>
+            </a>
             <div class="hidden md:flex space-x-8">
                 <a href="#recursos" class="text-slate-600 hover:text-primary-600 font-medium transition">Recursos</a>
                 <a href="#comparativo" class="text-slate-600 hover:text-primary-600 font-medium transition">Free vs PRO</a>
                 <a href="#faq" class="text-slate-600 hover:text-primary-600 font-medium transition">FAQ</a>
             </div>
             <div class="flex items-center gap-4">
-                <a href="#planos" class="bg-primary-600 hover:bg-primary-700 text-white px-5 py-2 rounded-full font-semibold transition shadow-md shadow-primary-500/30">
-                    Comprar Agora
+                <a href="#oferta" class="bg-primary-600 hover:bg-primary-700 text-white px-5 py-2 rounded-full font-semibold transition shadow-md shadow-primary-500/30">
+                    Comprar
                 </a>
             </div>
         </div>
@@ -56,7 +58,7 @@
 </nav>
 
 <!-- Hero Section -->
-<section class="hero-pattern pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
+<section id="hero" class="hero-pattern pt-32 pb-20 lg:pt-32 lg:pb-32 overflow-hidden">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary-50 border border-primary-100 text-primary-700 text-sm font-semibold mb-6">
             <span class="flex h-2 w-2 rounded-full bg-primary-600"></span>
@@ -69,8 +71,8 @@
             Substitua o rascunho nativo e limitado do WordPress por um painel profissional. Salve ideias, textos e snippets de código com syntax highlighting sem sair do Dashboard.
         </p>
         <div class="flex flex-col sm:flex-row justify-center gap-4">
-            <a href="#planos" class="bg-slate-900 hover:bg-slate-800 text-white px-8 py-3.5 rounded-full font-semibold text-lg transition shadow-xl">
-                Ver Planos PRO
+            <a href="#oferta" class="bg-slate-900 hover:bg-slate-800 text-white px-8 py-3.5 rounded-full font-semibold text-lg transition shadow-xl">
+                Quero Minha Oferta!
             </a>
             <a href="https://wordpress.org/plugins" target="_blank" class="bg-white hover:bg-slate-50 border border-slate-200 text-slate-700 px-8 py-3.5 rounded-full font-semibold text-lg transition shadow-sm flex items-center justify-center gap-2">
                 <i data-lucide="download" class="w-5 h-5"></i> Baixar versão Free
@@ -80,7 +82,7 @@
         <!-- Dashboard Mockup Image -->
         <div class="mt-16 relative max-w-5xl mx-auto">
             <div class="absolute inset-0 bg-gradient-to-t from-slate-50 to-transparent z-10 bottom-0 h-32"></div>
-            <img src="https://images.unsplash.com/photo-1618477247222-ac60ceb0a416?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Painel do Quick Draft PRO" class="rounded-xl shadow-2xl border border-slate-200 object-cover h-[400px] w-full object-top opacity-90">
+            <img src="blob:https://gemini.google.com/5de83fd9-6db7-4fc3-8c8d-af71354e20fd" alt="Painel do Quick Draft PRO" class="rounded-xl shadow-2xl border border-slate-200 object-cover h-[400px] w-full object-top opacity-90">
             <div class="absolute inset-0 flex items-center justify-center z-20">
                 <div class="bg-white/90 backdrop-blur p-6 rounded-2xl shadow-xl border border-slate-200 text-left max-w-sm transform -rotate-2 hover:rotate-0 transition duration-300">
                     <div class="flex items-center gap-2 mb-3">
@@ -338,25 +340,21 @@
         </div>
         
         <div class="space-y-4">
-            <!-- FAQ Item -->
             <div class="border border-slate-200 rounded-xl p-6">
                 <h4 class="font-bold text-slate-900 mb-2">Como recebo o plugin após a compra?</h4>
-                <p class="text-slate-600 text-sm leading-relaxed">Assim que o pagamento for aprovado, você receberá automaticamente um e-mail contendo o arquivo ZIP do plugin PRO e a sua Chave de Licença exclusiva para ativação no painel.</p>
+                <p class="text-slate-600 text-sm leading-relaxed">Assim que o pagamento for aprovado (pagamentos via PIX são liberados na hora), você receberá um e-mail automático da <strong>Kiwify</strong> com o seu acesso à nossa Área de Membros. Lá dentro, você terá acesso imediato para baixar o arquivo ZIP do plugin e pegar a sua Chave Mestra de ativação.</p>
             </div>
-            <!-- FAQ Item -->
             <div class="border border-slate-200 rounded-xl p-6">
                 <h4 class="font-bold text-slate-900 mb-2">Ele substitui o rascunho padrão do WordPress?</h4>
-                <p class="text-slate-600 text-sm leading-relaxed">Ele não deleta a função nativa, mas atua como um widget independente e infinitamente mais poderoso. Recomendamos ocultar o widget antigo nas "Opções de Tela" para manter seu painel limpo.</p>
+                <p class="text-slate-600 text-sm leading-relaxed">Ele não deleta a função nativa, mas atua como um painel independente e infinitamente mais poderoso. Recomendamos ocultar o widget antigo nas "Opções de Tela" (no topo direito) para manter seu painel limpo e focado no PRO.</p>
             </div>
-            <!-- FAQ Item -->
             <div class="border border-slate-200 rounded-xl p-6">
                 <h4 class="font-bold text-slate-900 mb-2">E se eu não renovar a assinatura anual?</h4>
-                <p class="text-slate-600 text-sm leading-relaxed">Os seus rascunhos criados estão seguros e salvos no banco de dados. Porém, ao expirar a licença, os recursos exclusivos (como criação ilimitada, editor de código e exportação avançada) serão desabilitados até a renovação.</p>
+                <p class="text-slate-600 text-sm leading-relaxed">Fique tranquilo, o plugin não vai parar de funcionar e os seus rascunhos estarão sempre seguros no seu banco de dados. A renovação serve exclusivamente para garantir seu acesso a novas atualizações de melhorias, compatibilidade com o WordPress e suporte técnico premium.</p>
             </div>
-            <!-- FAQ Item -->
             <div class="border border-slate-200 rounded-xl p-6">
-                <h4 class="font-bold text-slate-900 mb-2">Posso usar o plano Single em um ambiente de homologação (localhost)?</h4>
-                <p class="text-slate-600 text-sm leading-relaxed">Sim! Nossa verificação de licença permite ativar e desativar a chave quando você migrar do localhost para o domínio oficial em produção.</p>
+                <h4 class="font-bold text-slate-900 mb-2">Posso instalar em ambientes de teste (localhost) ou em clientes?</h4>
+                <p class="text-slate-600 text-sm leading-relaxed">Sim! Com esta Oferta Fundador você está levando a <strong>Licença Ilimitada</strong>. Isso significa que você pode instalar e ativar o Quick Draft PRO em quantos sites quiser, incluindo ambientes de homologação (localhost), sites próprios e de clientes, sem restrições.</p>
             </div>
         </div>
     </div>
